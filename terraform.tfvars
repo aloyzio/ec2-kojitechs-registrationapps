@@ -1,6 +1,6 @@
-d_name = {
-  default = "alloyzio.click"
-  sbx = ""
-}
+# d_name = {
+#   default = "alloyzio.click"
+#   sbx = ""
+# }
 
-subject_alternative_names = ["*.alloyzio.click"]
+# subject_alternative_names = ["*.alloyzio.click"]

@@ -32,6 +32,7 @@ resource "aws_instance" "frond_end" {
   }
   ami                    = data.aws_ami.ami.id
   instance_type          = lookup(each.value, "instance_type")
+  #instance_type = terraform.workspace == "prod" ? "t2.xlarge" : "t2.micro" 
   subnet_id              = lookup(each.value, "subnet_id")
   vpc_security_group_ids = [aws_security_group.front_app_sg.id]
   user_data              = lookup(each.value, "user_data")

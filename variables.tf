@@ -17,10 +17,12 @@ variable "name" {
 }
 
 variable "d_name" {
-  default = {
-    default = "alloyzio.click"
- #   sbx  = "alloyzio.click"
-  }
+  type = map(any)
+  
+#   default = {
+#     default = "alloyzio.click"
+#  #   sbx  = "alloyzio.click"
+#   }
 }
 
 
